@@ -1,0 +1,121 @@
+.banner {
+    background-color: maroon;
+    color: rgb(228, 210, 55);
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(maroon, rgb(34, 27, 27));
+}
+
+.center {
+  margin-top: 3px;
+  padding: 5px;
+  text-align: center;
+  list-style-position: inside;
+  
+}
+
+.suggestion {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 42px;
+  cursor: pointer;
+  list-style-type: none;
+  text-align: center;
+}
+
+.no-show {
+  height: 38px;
+  width: 225px;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 0px;
+  text-align: center;
+  width: 233px;
+  margin: auto;
+  margin-top: -28px;
+  margin-bottom: 15px;
+}
+
+.update {
+  padding-left: 0px;
+  text-align: center;
+  width: 233px;
+  margin: auto;
+  margin-top: -28px;
+  margin-bottom: 15px;
+  margin-left: 306px;
+}
+
+.top {
+  padding: 5px;
+}
+
+.list {
+  text-align: center;
+  border: 2px solid;
+  margin-bottom: 30px;
+}
+
+.add {
+  height: 50px;
+  width: 120px;
+  background-color: rgb(16, 77, 148);
+  color: white;
+  border-style: solid;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.delete {
+  height: 50px;
+  width: 120px;
+  background-color: rgb(121, 29, 7);
+  color: white;
+  border-style: solid;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.div-method {
+  margin-bottom: 40px;
+}
+
+.method {
+  width: 50%;
+  height: 45px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.method-selected {
+  width: 50%;
+  height: 45px;
+  background-color: rgb(131, 40, 40);
+  margin-bottom: 40px;
+  color: white;
+}
+
+input {
+  height: 30px;
+  width: 225px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+  clear: left;
+  text-align: right;
+  width: 180px;
+  margin-right: 23px;
+  margin-left: -210px;
+}
