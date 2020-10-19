@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import deliveryService from './services/deliveries'
+import { BrowserRouter as Router } from 'react-router-dom'
+import NavigationBar from './components/NavigationBar'
+import Switch from 'react-bootstrap/esm/Switch'
 
 const Inputs = ({ address, total, payment, handleAddress, handleTotal, handlePayment, predictions }) => {
   if (predictions.length > 2 && address.length > 0) {
@@ -253,10 +256,12 @@ const App = () => {
 
   return (
     <div>
-      <div className="banner">
-        <h1>Delivery Tracker</h1>
-      </div>
-      <Method handleMethod={handleMethod} method={method} address={address} total={total} payment={payment} handleClick={handleClick} handleAddress={handleAddress} handleTotal={handleTotal} handlePayment={handlePayment} handleTip={handleTip} deliveries={deliveries} tips={tips} handleDelete={handleDelete} handleUpdate={handleUpdate} update={update} handleSave={handleSave} predictions={predictions} />
+      <NavigationBar />
+      <Router>
+        <Method handleMethod={handleMethod} method={method} address={address} total={total} payment={payment} handleClick={handleClick} handleAddress={handleAddress} handleTotal={handleTotal} handlePayment={handlePayment} handleTip={handleTip} deliveries={deliveries} tips={tips} handleDelete={handleDelete} handleUpdate={handleUpdate} update={update} handleSave={handleSave} predictions={predictions} />
+        <Switch>
+        </Switch>
+      </Router>
     </div>
   )
 }
